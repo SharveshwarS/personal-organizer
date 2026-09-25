@@ -1,8 +1,21 @@
 # Personal Organizer
 
-A private, offline Windows app for tasks, calendars, habits, notes, and monthly budgets.
+A free-to-use, offline Windows app for tasks, calendars, habits, notes, and monthly budgets.
 
 Created by [Sharveshwar S](https://github.com/SharveshwarS). Built with React, TypeScript, Electron, and SQLite.
+
+## Download and try it
+
+**[Download Personal Organizer for Windows x64](https://github.com/SharveshwarS/personal-organizer/releases/download/v0.4.0-preview.1/Personal-Organizer-Setup-0.4.0-preview.1.exe)** · [Release notes and checksum](https://github.com/SharveshwarS/personal-organizer/releases/tag/v0.4.0-preview.1)
+
+Free to download and use. No subscription, account or developer tools are needed. Download the setup `.exe`, run it, and open Personal Organizer from your desktop or Start menu. First-run setup lets you personalize a fresh workspace.
+
+| What you want to do | Start here |
+| --- | --- |
+| Install and use the app | [Installer guide](installer/README.md) |
+| Explore the code or build locally | [Development guide](development/README.md) |
+
+This is a **preview**, currently packaged for Windows x64. The installer is **unsigned**, so Windows may show an unknown-publisher or SmartScreen warning. Download from this repository's release page and verify the checksum if needed. Updates are manual; export a backup before upgrading. See the installer guide for known limitations and feedback links.
 
 **Status: 0.4.0-preview.1 adds a cozy garden, focus sessions, reminder snooze, flexible recurrence, tags, habit history/pauses, recurring bills and monthly comparisons.** See the release notes for test coverage and remaining native desktop checks. This is a preview with publicly shared source. An open-source license has not been selected; package metadata remains `UNLICENSED`.
 
@@ -74,7 +87,7 @@ npm run build
 npm run package:win
 ```
 
-The Windows installer and unpacked app are produced in `release/`. This source preview does not include a downloadable installer on GitHub. Build one locally with the command above. Packaging generates third-party notices from the locked production dependencies. Electron's own notices ship with its runtime. Executables are currently unsigned.
+The Windows installer and unpacked app are produced in `release/`. Official setup downloads are attached to [GitHub Releases](https://github.com/SharveshwarS/personal-organizer/releases), keeping large binaries out of source history. Packaging generates third-party notices from the locked production dependencies. Electron's own notices ship with its runtime. Executables are currently unsigned.
 
 ## Project documents
 
@@ -92,6 +105,6 @@ The Windows installer and unpacked app are produced in `release/`. This source p
 
 ## License
 
-No open-source license is granted at this time. Copyright © 2026 Sharveshwar S. Package metadata intentionally remains `UNLICENSED`; this is not the public-domain Unlicense. See [GitHub’s explanation of unlicensed repositories](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). Third-party dependencies retain their own licenses; `npm run notices` generates their attribution file.
+The official app builds are free to download, install and use. The source is publicly available for inspection, but no open-source license is granted at this time. Copyright © 2026 Sharveshwar S. Package metadata intentionally remains `UNLICENSED`; this is not the public-domain Unlicense. See [GitHub’s explanation of unlicensed repositories](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository). Third-party dependencies retain their own licenses; `npm run notices` generates their attribution file.
 
 `private: true` prevents accidental npm publication; it does not describe the GitHub repository’s visibility.

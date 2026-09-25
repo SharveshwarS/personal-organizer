@@ -34,7 +34,9 @@ New version-2 backups need the new app; older backups remain importable.
 Do not reopen a migrated schema-2 database using version 0.2 or earlier.
 
 RELEASE
-The installer is in release, with SHA256SUMS.txt for file integrity.
+Download the setup file and SHA256SUMS.txt from:
+https://github.com/SharveshwarS/personal-organizer/releases/tag/v0.4.0-preview.1
+Official app builds are free to download, install and use.
 Automated tests have passed; remaining native Windows checks are listed in the release notes.
 The source is publicly shared; the open-source license remains undecided.
 

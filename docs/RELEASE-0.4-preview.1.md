@@ -14,7 +14,7 @@ New fields are optional additions to schema 2 and are validated on save/import. 
 
 The development desktop workflow suite also passed with 16 UI workflow groups and 12 desktop smoke checks. It exercised actual IPC/SQLite persistence, task/habit rewards, snooze, filters, focus pause/resume and hidden-window completion, garden interaction, habit pauses and confirmed bill payment. Synthetic focus deadlines were shortened to exercise the real background completion path. Reminder transport was captured; native file-dialog choices were simulated.
 
-Windows popup clicks, sleep/wake, login startup and actual OS display scaling still require a native desktop trial. The app cannot notify while the PC is off. Local trial, signing, license selection and GitHub publication remain separate from these checks.
+Windows popup clicks, sleep/wake, login startup and actual OS display scaling still require a native desktop trial. The app cannot notify while the PC is off. The public preview is free to download and use; signing and source-license selection remain pending.
 
 ## Final package and installation
 
@@ -23,3 +23,9 @@ The final packaged run passed with exit code 0: 16 UI workflow groups and 12 des
 The Windows installer exited with code 0. Windows registers 0.4.0-preview.1; the installed application archive matches the tested archive, the desktop shortcut resolves correctly, and the user database SHA-256 is unchanged. The previous installer/blockmap were removed. The current installer/checksum remain under `release/`.
 
 Local evidence (ignored and excluded from distribution): `qa/feature-unit-tests.log`, `qa/garden-packaged.stdout.log`, `qa/garden-packaged.stderr.log`, `qa/garden-packaged.exitcode`, `qa/ui-flows.json`, `qa/desktop-smoke.json`, `qa/installation-garden.json`, and the `qa/qa-*.png` screenshots. Archive inspection confirmed no QA profile, database or `.env` file and confirmed third-party notices.
+
+## Public download
+
+The same tested installer is distributed through [GitHub Releases](https://github.com/SharveshwarS/personal-organizer/releases/tag/v0.4.0-preview.1). It is an unsigned Windows x64 preview, free to download, install and use. See [installation instructions](../installer/README.md).
+
+Installer SHA-256: `eea121db63328fe9a6bb974e6dcba18379112dc5d2127838f7c042f829e0f900`.
