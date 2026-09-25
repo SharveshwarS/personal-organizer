@@ -1,0 +1,47 @@
+PERSONAL ORGANIZER — 0.4.0-preview.1 LOCAL TRIAL
+By Sharveshwar S — https://github.com/SharveshwarS
+
+Automated checks cover the new features. Remaining native checks are documented in the release notes.
+Open the Personal Organizer desktop shortcut. Existing setup and records are retained.
+
+FIRST LAUNCH
+Choose an optional name, currency and first day of the week.
+Enter monthly planning amounts and opening balances, or skip finance setup.
+Existing users retain their records and old planning amounts; edit preferences in Settings.
+
+YOUR WORKSPACE
+Customize task lists and expense categories in Settings.
+Use + beside My Lists to add a list directly from the sidebar.
+Add tasks and checklist steps. Schedule tasks or set habit reminder times.
+Choosing a task time enables its reminder automatically. Uncheck it for no alert.
+Record actual income, expenses and savings transfers in Finance.
+Edit a monthly plan or set defaults for future months.
+
+REMINDERS
+X keeps the app running in the tray. Click its icon to reopen.
+Right-click the tray icon > Quit Personal Organizer to stop it fully.
+Configure quiet hours and optional Windows startup in Settings.
+Habits offer preset/custom units and daily or interval Windows reminders.
+Choose minutes/hours and a same-day start/end time for interval reminders.
+Optionally stop interval reminders after reaching the daily target.
+After sleep or quiet hours only the latest eligible interval is considered.
+The app cannot notify while fully quit or while the PC is asleep/off.
+
+RECOVERY
+Settings shows the data folder and latest automatic backup date.
+Export a backup to a separate drive before upgrading or changing computers.
+New version-2 backups need the new app; older backups remain importable.
+Do not reopen a migrated schema-2 database using version 0.2 or earlier.
+
+RELEASE
+The installer is in release, with SHA256SUMS.txt for file integrity.
+Automated tests have passed; remaining native Windows checks are listed in the release notes.
+The source is publicly shared; the open-source license remains undecided.
+
+COZY GARDEN UPDATE
+Journey: optional XP, plants, badges and an interactive firefly.
+Focus: timed work or breaks, task linking, pause/resume and session history.
+Bell: snooze reminders for 5, 10 or 30 minutes without moving task dates.
+Habits: pause dates and target/schedule history.
+Finance: confirmed monthly bill payments and category comparisons.
+Details: docs/FEATURE-COMPARISON-0.4.md

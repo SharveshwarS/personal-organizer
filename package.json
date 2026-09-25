@@ -1,0 +1,81 @@
+{
+  "name": "personal-organizer",
+  "productName": "Personal Organizer",
+  "version": "0.4.0-preview.1",
+  "private": true,
+  "description": "A private, offline Windows organizer for tasks, habits, notes, and personal budgets",
+  "author": {
+    "name": "Sharveshwar S",
+    "url": "https://github.com/SharveshwarS"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "build/electron/main.js",
+  "scripts": {
+    "icons": "electron scripts/build-icons.cjs",
+    "dev": "vite --host 127.0.0.1 --port 5186 --strictPort",
+    "build": "tsc --noEmit && vite build && tsc -p tsconfig.electron.json",
+    "desktop": "npm run build && electron .",
+    "test": "tsc -p tsconfig.electron.json && node --experimental-strip-types --test tests/*.test.ts",
+    "package:dir": "npm run notices && npm run build && electron-builder --win --x64 --dir --publish never",
+    "package:win": "npm run notices && npm run build && electron-builder --win nsis --x64 --publish never",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "notices": "node scripts/third-party-notices.cjs"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "lucide-react": "^1.46.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "electron": "^44.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "local.personal.organizer",
+    "productName": "Personal Organizer",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "electron/preload.cjs",
+      "public/icon.png",
+      "public/icon.ico",
+      "THIRD-PARTY-NOTICES.txt"
+    ],
+    "electronDist": "node_modules/electron/dist",
+    "win": {
+      "target": "nsis",
+      "icon": "public/icon.ico",
+      "signExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "artifactName": "Personal-Organizer-Setup-${version}.${ext}",
+    "copyright": "Copyright © 2026 Sharveshwar S"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SharveshwarS/personal-organizer.git"
+  },
+  "homepage": "https://github.com/SharveshwarS/personal-organizer#readme",
+  "bugs": {
+    "url": "https://github.com/SharveshwarS/personal-organizer/issues"
+  }
+}

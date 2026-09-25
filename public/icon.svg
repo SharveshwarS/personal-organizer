@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="24" y1="16" x2="222" y2="248" gradientUnits="userSpaceOnUse"><stop stop-color="#b0a0ff"/><stop offset=".5" stop-color="#7b5ce5"/><stop offset="1" stop-color="#493398"/></linearGradient>
+    <linearGradient id="paper" x1="77" y1="72" x2="169" y2="201" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#e6e1ff"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="60" fill="url(#tile)"/>
+  <rect x="9.5" y="9.5" width="237" height="237" rx="58.5" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="3"/>
+  <rect x="59" y="67" width="142" height="145" rx="28" fill="#2d1a67" opacity=".24"/>
+  <rect x="52" y="57" width="152" height="146" rx="29" fill="url(#paper)"/>
+  <path d="M81 49v27M175 49v27" stroke="#35236b" stroke-width="13" stroke-linecap="round"/>
+  <path d="M74 98h108" stroke="#cec4f2" stroke-width="7" stroke-linecap="round"/>
+  <path d="m91 146 24 24 48-49" fill="none" stroke="#6d4bd0" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
